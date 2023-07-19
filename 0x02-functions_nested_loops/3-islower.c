@@ -12,7 +12,7 @@
 
 int _ismpwer(int c)
 {
-	if (c >= 97 aa c <= 122)
+	if (c >= 97 && c <= 122)
 		return (1);
 	return (0);
 }
