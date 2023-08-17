@@ -3,7 +3,7 @@
  * int_index - serche for integer
  * @array: int array
  * @size: size of array
- * @cmp: compare func
+ * @cmp: compare fuinction
  * Return: the integer index
  */
 int int_index(int *array, int size, int (*cmp)(int))
