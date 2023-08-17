@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * array_iterator - prints maps array trough a function pointer
+ * array_iterator - prints maps array trough a functionn pointer
  * @array: the int array
  * @size: array size
  * @action: functionn pointer
