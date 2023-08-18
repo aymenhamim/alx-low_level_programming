@@ -24,7 +24,9 @@ void format_int(char *separator, va_list ap)
  * @ap: argument pointer
  */
 void format_float(char *separator, va_list ap)
+{
 	printf("%s%f", separator, va_arg(ap, double));
+}
 
 /**
  * format_string - formats string
