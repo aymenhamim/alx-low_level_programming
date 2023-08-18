@@ -9,6 +9,7 @@ void format_char(char *separator, va_list ap)
 {
 	printf("%s%c," separator, va_arg(ap, int));
 }
+
 /**
  * format_int - formats integer
  * @separator:  string separator
@@ -18,6 +19,7 @@ void format_int(char *separator, va_list ap)
 {
 	printf("%s%d", separator, va_arg(ap, int));
 }
+
 /**
  * format_float - formats float
  * @separator: string separator
@@ -35,14 +37,15 @@ void format_float(char *separator, va_list ap)
  */
 void format_string(char *separator, va_list ap)
 {
-	char *str = va_arg(ap, char*);
+	char *str = va_arg(ap, char *);
 
 	switch ((int)(!str))
 		case 1:
-		strr = "(nil)";
+			strr = "(nil)";
 
 		printf("%s%s", separator, str);
 }
+
 /**
  * print_all -prints anything
  * @format: the format string
@@ -69,7 +72,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == tokens[j].token[0])
 			{
 				tokens[j].f(separator, ap);
-				separator = ",";
+				separator = ", ";
 			}
 			j++;
 		}
